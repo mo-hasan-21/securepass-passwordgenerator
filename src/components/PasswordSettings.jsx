@@ -13,7 +13,7 @@ function PasswordSettings({
           <label className="text-sm font-medium text-gray-700">
             Password Length
           </label>
-          <span className="text-sm font-semibold text-orange-600 bg-orange-50 px-2.5 py-0.5 rounded-md">
+          <span className="text-sm font-semibold text-orange-600 bg-orange-50 px-3 py-1 rounded-md min-w-12 text-center">
             {length}
           </span>
         </div>
@@ -22,20 +22,20 @@ function PasswordSettings({
         <input 
           type="range"
           min={6}
-          max={25} // Changed from 100 to 25
+          max={25}
           value={length}
-          className="easy-slider" // Applied custom CSS class
+          className="easy-slider w-full"
           onChange={(e) => { setLength(Number(e.target.value)) }}
         />
         
         {/* Min/Max labels for better context */}
-        <div className="flex justify-between text-xs text-gray-400 mt-1 px-1">
+        <div className="flex justify-between text-xs text-gray-400 mt-2 px-1">
           <span>6</span>
           <span>25</span>
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-8 pt-2">
+      <div className="flex flex-col sm:flex-row flex-wrap gap-4 sm:gap-8 pt-2">
         <Checkbox 
           id="numberInput"
           checked={numberAllowed}

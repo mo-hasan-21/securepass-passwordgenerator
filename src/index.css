@@ -103,3 +103,26 @@
 .easy-slider::-moz-range-thumb:hover {
   transform: scale(1.15);
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Make slider easier to touch on mobile */
+  .easy-slider {
+    height: 40px; /* Larger touch area */
+  }
+  
+  .easy-slider::-webkit-slider-thumb {
+    width: 28px;
+    height: 28px;
+    margin-top: -12px;
+  }
+  
+  .easy-slider::-moz-range-thumb {
+    width: 28px;
+    height: 28px;
+  }
+}
