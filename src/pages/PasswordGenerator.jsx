@@ -1,6 +1,8 @@
 import { useState, useCallback, useEffect, useRef } from 'react'
 import PasswordDisplay from '../components/PasswordDisplay'
 import PasswordSettings from '../components/PasswordSettings'
+import AdBanner from '../components/AdBanner'
+
 
 function PasswordGenerator() {
   const [length, setLength] = useState(6)
@@ -66,6 +68,9 @@ function PasswordGenerator() {
         >
           Regenerate Password
         </button>
+      </div>
+            <div className="mt-10">
+        <AdBanner slot="0987654321" />
       </div>
     </div>
   )

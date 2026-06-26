@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom'
 import jez from '../assets/jez.jpg'
 import james from '../assets/james.jpg'
 import hecker from '../assets/hecker.jpg'
+import AdBanner from '../components/AdBanner'
+
 
 function Home() {
   const reviews = [
@@ -53,7 +55,10 @@ function Home() {
         </div>
       </div>
 
-      {/* Feature Cards */}
+      <div className="max-w-2xl mx-auto mb-12">
+        <AdBanner slot="1234567890" /> 
+      </div>
+
       <div className="grid md:grid-cols-3 gap-6 mt-8">
         <FeatureCard 
           title="Secure"
@@ -72,7 +77,6 @@ function Home() {
         />
       </div>
 
-      {/* User Reviews Section */}
       <div className="mt-20 mb-12">
         <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">
           What Users Say

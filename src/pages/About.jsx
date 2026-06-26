@@ -1,3 +1,5 @@
+import AdBanner from '../components/AdBanner'
+
 function About() {
   return (
     <div className="animate-fade-in max-w-2xl mx-auto">
@@ -44,6 +46,9 @@ function About() {
             </p>
           </section>
         </div>
+      </div>
+        <div className="mt-10">
+        <AdBanner slot="1122334455" />
       </div>
     </div>
   )
