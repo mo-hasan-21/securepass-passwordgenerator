@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import PasswordGenerator from './pages/PasswordGenerator'
 import About from './pages/About'
 import './index.css'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
